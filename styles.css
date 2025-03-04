@@ -1,0 +1,163 @@
+/* Styles modernes et technologiques */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #121212;
+    color: #d0d0d0;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    background: rgba(20, 20, 20, 0.95);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 4px 0px 12px rgba(0, 255, 255, 0.2);
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidebar h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #00d9ff;
+}
+
+.sidebar p {
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 25px 0;
+}
+
+.menu li a {
+    color: #00d9ff;
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.menu li a i {
+    display: inline;
+    margin-right: 12px;
+}
+
+.menu li a:hover {
+    color: #00aaff;
+    transform: translateX(5px);
+}
+
+.copyright {
+    font-size: 16px;
+    text-align: center;
+    margin-top: auto;
+    color: #555;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    padding: 50px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.main-content h1 {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #00d9ff;
+    text-transform: uppercase;
+}
+
+/* Sections */
+section {
+    width: 85%;
+    text-align: left;
+    margin-bottom: 50px;
+    padding-left: 25px;
+}
+
+section h2 {
+    color: #00d9ff;
+    margin-bottom: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section p, section ul {
+    font-size: 20px;
+    line-height: 2;
+    color: #c0c0c0;
+}
+
+section ul {
+    margin-top: 12px;
+    padding-left: 25px;
+}
+
+section ul li {
+    margin-bottom: 12px;
+}
+
+/* CV Buttons */
+.cv-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background: #1e1e1e;
+    color: #00d9ff;
+    padding: 14px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #00d9ff;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #00d9ff;
+    color: #121212;
+    transform: scale(1.08);
+}
